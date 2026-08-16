@@ -1,0 +1,20 @@
+[project]
+name = "my35aiminiproject"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "ummkaltumfrd@gmail.com", email = "ummkaltumfrd@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "dotenv>=0.9.9",
+    "ollama>=0.6.2",
+]
+
+[project.scripts]
+my35aiminiproject = "my35aiminiproject:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
