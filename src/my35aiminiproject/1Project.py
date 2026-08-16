@@ -1,8 +1,17 @@
+"""
+  THE 1ST PROJECT : Structured	Output	Extractor
+Learn:
+ 1.calling a model and get a structured output.
+ 2.using library Pydantic to structure the input and valide the output.
+ 3.using the library dotenv (file env) no hardcoded code.
+ 4.reading file (txt) and send it as prompt.
+ 5.automatically retry
+"""
 import os
-import ollama
-from pydantic import BaseModel
-from dotenv import load_dotenv
 
+import ollama
+from dotenv import load_dotenv
+from pydantic import BaseModel
 
 load_dotenv()
 
