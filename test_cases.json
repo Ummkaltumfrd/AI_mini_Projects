@@ -1,0 +1,76 @@
+[
+  {
+    "id": "test_01",
+    "type": "code",
+    "question": "What is 847 * 39 + 12?",
+    "expected_answer": 33045,
+    "expected_tool": "Calculator"
+  },
+  {
+    "id": "test_02",
+    "type": "code",
+    "question": "What is 10 * 5 + 2?",
+    "expected_answer": 52,
+    "expected_tool": "Calculator"
+  },
+  {
+    "id": "test_03",
+    "type": "code",
+    "question": "Calculate 7 * 8 + 4.",
+    "expected_answer": 60,
+    "expected_tool": "Calculator"
+  },
+  {
+    "id": "test_04",
+    "type": "code",
+    "question": "Convert 190 cm to feet.",
+    "expected_answer": 6.232,
+    "expected_tool": "Converter"
+  },
+  {
+    "id": "test_05",
+    "type": "code",
+    "question": "How many feet is 100 cm?",
+    "expected_answer": 3.28,
+    "expected_tool": "Converter"
+  },
+  {
+    "id": "test_06",
+    "type": "code",
+    "question": "What is today's date?",
+    "expected_answer": "September 10, 2026",
+    "expected_tool": "DateTool"
+  },
+  {
+    "id": "test_07",
+    "type": "code",
+    "question": "Tell me the current date.",
+    "expected_answer": "September 10, 2026",
+    "expected_tool": "DateTool"
+  },
+  {
+    "id": "test_08",
+    "type": "llm",
+    "question": "What is the capital of France?"
+  },
+  {
+    "id": "test_09",
+    "type": "llm",
+    "question": "Why is the sky blue?"
+  },
+  {
+    "id": "test_10",
+    "type": "llm",
+    "question": "Hi, how are you?"
+  },
+  {
+    "id": "test_11",
+    "type": "llm",
+    "question": "What are the benefits of learning Python?"
+  },
+  {
+    "id": "test_12",
+    "type": "llm",
+    "question": "Explain what artificial intelligence is in simple words."
+  }
+]
