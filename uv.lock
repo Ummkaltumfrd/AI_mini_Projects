@@ -328,6 +328,7 @@ version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "dotenv" },
+    { name = "numpy" },
     { name = "ollama" },
     { name = "pandas" },
 ]
@@ -340,6 +341,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "dotenv", specifier = ">=0.9.9" },
+    { name = "numpy", specifier = ">=2.5.2" },
     { name = "ollama", specifier = ">=0.6.2" },
     { name = "pandas", specifier = ">=3.0.5" },
 ]
