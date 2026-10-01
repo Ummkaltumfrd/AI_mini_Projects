@@ -1,0 +1,4 @@
+FROM ./gguf/llama-3.2-1b-ft-f16.gguf
+
+PARAMETER temperature 0.7
+PARAMETER top_p 0.9

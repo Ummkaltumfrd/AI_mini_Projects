@@ -9,3 +9,9 @@ wheels/
 # Virtual environments
 .venv
 .env
+llama.cpp
+
+# ML models and generated files
+src/my35aiminiproject/10Project/gguf/
+src/my35aiminiproject/10Project/merged/
+src/my35aiminiproject/10Project/output/
