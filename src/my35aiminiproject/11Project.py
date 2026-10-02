@@ -4,6 +4,7 @@ Learn:
 1.Embeddings (transform texts to number <vectors>). with nomic-embed-text
 2.Cosine similarity (tells us how similar two pieces of text are).
 3.Numpy (numrical calculations in Python<library>.)
+
 """
 
 import os
