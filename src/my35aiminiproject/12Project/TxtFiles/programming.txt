@@ -1,0 +1,1 @@
+Learning to write software requires practice and problem solving. Programmers use languages such as Python to build applications, automate repetitive tasks, and process information. Working on small projects is a useful way to improve coding skills.
