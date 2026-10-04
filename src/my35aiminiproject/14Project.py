@@ -1,15 +1,15 @@
 """
 THE 14TH PROJECT : Hybrid	Search	+	Reranking
 Learn:
-1,BM25 search -> to search by exct name 
-1. Hybrid search ->  bm25 +  semantic
-2. Reranking -> mechanism to rerank the results (for each document it will see how much a doc relevent to the query.) from the result of the Hybird search.(not nessecerly)
-3.Dot Product (A . B) → measures similarity by taking into account both the direction and magnitude (length) of the vectors.
+1.BM25 search -> to search by exct name 
+2. Hybrid search ->  bm25 +  semantic
+3. Reranking -> mechanism to rerank the results (for each document it will see how much a doc relevent to the query.) from the result of the Hybird search.(not nessecerly)
+4.Dot Product (A . B) → measures similarity by taking into account both the direction and magnitude (length) of the vectors.
 
 Cosine Similarity (A . B)/ A + B → measures similarity based only on the direction of the vectors, ignoring their magnitude.
    IT DEPENDS on the object of the model about who to use.
 
-4. sentence-transforms by model = all-MiniLM-L6-v2-> use Dot Product for semantic search 
+5. sentence-transforms by model = all-MiniLM-L6-v2-> use Dot Product for semantic search 
 
 """
 
