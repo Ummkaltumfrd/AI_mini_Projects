@@ -2,7 +2,6 @@ import os
 import re
 from pathlib import Path
 
-import ollama
 from docling.chunking import HybridChunker
 from docling.document_converter import DocumentConverter
 from dotenv import load_dotenv
@@ -99,41 +98,3 @@ print(
     f"Sentence-based: "
     f"{len(sentence_chunks_result)} chunks"
 )
-
-#===========================================
-# Helper : add chunks to Chroma  
-#===========================================
-
-def add_chunks(collection,chunks,prefix):
-   documents = []
-   embeddings = []
-   ids = []
-   metadatas = []
-
-   for i,text in enumerate(chunks):
-      response = ollama.embed(
-         model= emb_model,
-         input =text
-      )
-
-      embedding = response["embeddings"][0]
-
-      documents.append(text)
-      embeddings.append(embedding)
-      ids.append(f"{prefix}_{i}")
-
-      metadatas.append({
-         "source": PDF_PATH.name,
-         "chunk_id":i,
-         "chunk_type": prefix
-      })
-   collection.upsert(
-      ids=ids,
-      documents=documents,
-      embeddings=embeddings,
-      metadatas=metadatas
-   )
-
-   print(
-      f"{prefix}: stored {len(documents)} chunks"
-   )

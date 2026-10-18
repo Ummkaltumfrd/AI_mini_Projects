@@ -1,0 +1,14 @@
+Energy Targets and Definitions
+==============================
+
+2025 Target
+-----------
+Atlas Energy aims to reduce total electricity consumption by 8% in 2025 compared with the 2024 baseline.
+
+Renewable Target
+----------------
+The company aims for at least 45% of annual electricity consumption to be supplied by on-site renewable generation by the end of 2026.
+
+Definition
+----------
+Renewable share is calculated as on-site renewable electricity generated and used divided by total facility electricity consumption, multiplied by 100. For the demo's simple calculation, assume all solar generation is used on-site.
