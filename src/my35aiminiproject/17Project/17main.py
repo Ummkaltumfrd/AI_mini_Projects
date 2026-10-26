@@ -14,17 +14,19 @@ from ingest import embed_text
 
 load_dotenv()
 
-DB_DIR = "chroma_db"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DB_DIR = os.path.join(BASE_DIR, "chroma_db")
 COLLECTION_NAME = "company_documents"
-
-EMBED_MODEL = "nomic-embed-text"
-CHAT_MODEL = os.environ.get("ai_model")
-TOP_K = 6
+TOP_K=6
 
 client = chromadb.PersistentClient(path=DB_DIR)
 collection = client.get_collection(name=COLLECTION_NAME)
 
+print("Base path:", BASE_DIR)
+
+
 def search_documents(question: str, filename=None, section=None):
+    print("collection: ",collection.count())
     if collection.count() == 0:
         return []
 
